@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-rounded/css/uicons-bold-rounded.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="brand">Book.UZ</div>
+      <ul>
+        <li>Home</li>
+        <li>Materials</li>
+        <li>Contact</li>
+        <li>About</li>
+      </ul>
+    </nav>
+    <div class="mobile-menu">
+      <div class="brand">Book.UZ</div>
+      <div id="m-menu">
+        <i class="fi fi-br-menu-burger"></i>
+      </div>
+      <nav id="drop-down">
+        <ul>
+          <li>Home</li>
+          <li>Materials</li>
+          <li>Contact</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <div class="heading">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis,
+          excepturi dolore nulla voluptates exercitationem placeat officia,
+          vitae assumenda est suscipit quisquam laborum corrupti saepe sunt,
+          ducimus nihil ipsa itaque deserunt.
+        </p>
+      </div>
+      <img
+        src="https://images.unsplash.com/photo-1544896478-d5b709d413c5?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="rasm" />
+    </main>
+  </body>
+  <script>
+    const m_menu = document.getElementById("m-menu");
+    const drop_down = document.getElementById("drop-down");
+    m_menu.addEventListener("click", () => {
+      if (drop_down.style.display === "none") {
+        drop_down.style.display = "block";
+      } else {
+        drop_down.style.display = "none";
+      }
+    });
+  </script>
+</html>
